@@ -1,0 +1,32 @@
+
+nav.navbar.navbar-inverse.navbar-fixed-top
+	.container-fluid
+		.navbar-header
+			button.navbar-toggle data-target="#my-navbar" data-toggle="collapse" type="button"
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			.navbar-brand
+				img src="assets/images/leangreen-logo-black.png"
+		#my-navbar.collapse.navbar-collapse.navbar-right
+			ul.nav.navbar-nav
+				li
+					link-to 'index'
+						| Home
+				li
+					link-to 'about'
+						| About
+				li
+					link-to 'training'
+						| Get Training
+				li
+					link-to 'vegucated'
+						| Get Vegucated
+				li
+					link-to 'reviews'
+						| Raving Reviews
+				li
+					link-to 'shop'
+						| Shop
+
+=liquid-outlet class="navigation-content"

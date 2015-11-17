@@ -1,0 +1,39 @@
+.cd-main-content.navigation-content
+	.cd-scrolling-bg.cd-color-2.first-item
+		.cd-container
+			p
+				strong Services
+			p
+				| Our exercise programs are based on the training and teachings of the world-renowned&nbsp;
+				a  href="http://chekinstitute.com/Advanced_Training_Programs/" target="blank"
+					| C.H.E.K. Institute
+				| , located in California USA. Committed to a holistic approach, C.H.E.K Practitioners are widely-recognized as the finest and most highly trained exercise therapists, strength & conditioning specialists and nutrition and lifestyle coaches in the world!
+
+			p style="padding: 1em 0;"
+				strong
+					| Do you suffer from any of the following conditions?
+			= partial 'partials/conditions-form'
+
+			p style="float:left" The C.H.E.K approach to corrective exercise can assist you to overcome these conditions, and more.
+
+	.cd-fixed-bg.cd-bg-6
+		.cd-fixed-bg-content
+
+			h2 style="margin:2em;"
+				| Let's Get Training!
+
+			img.text-center src="assets/images/iphone6.png" height=300
+			p Download Our New App
+
+	.cd-scrolling-bg.cd-color-2
+		.cd-container
+			p
+				strong Your Journey
+
+			p This begins with an assessment of your current physical, emotional and mental condition.
+
+			p I will then design a corrective exercise program to not only address any pain you are experiencing but to focus on the underlying cause of these dysfunctions. The program will enable you to restore optimal health and vitality.
+
+			p Initially I will have you complete a series of questionnaires. These can all be done via my website. After you have completed your questionnaires, I will review them and contact you to set-up a Comprehensive Postural Assessment.
+
+			p After your assessment, I will design a customised exercise program based on both your assessment and submitted questionnaires. Exercise programs generally consist of corrective stretches along with resistance & cardio training, depending on your needs. You will receive an easy-to-follow detailed description of your exercise program, including acute variables such as Rest, Tempo, Intensity, Duration, Repetitions and Sets. This information along with Video clips of each of your exercises is all available for you to view via my website.

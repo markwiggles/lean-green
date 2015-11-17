@@ -1,0 +1,66 @@
+form#conditions-form
+  table.col-md-5
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-conditions-1 name="1" type="checkbox" value="1"
+          label for="checkboxFiveInput-conditions-1"
+      td.checkbox-text
+        label Back Pain
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-conditions-2 name="2" type="checkbox" value="1"
+          label for="checkboxFiveInput-conditions-2"
+      td.checkbox-text
+        label Chronic Injury
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-conditions-3 name="3" type="checkbox" value="1"
+          label for="checkboxFiveInput-conditions-3"
+      td.checkbox-text
+        label Poor Posture
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-conditions-4 name="4" type="checkbox" value="1"
+          label for="checkboxFiveInput-conditions-4"
+      td.checkbox-text
+        label Weight Loss
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-conditions-5 name="5" type="checkbox" value="1"
+          label for="checkboxFiveInput-conditions-5"
+      td.checkbox-text
+        label Weight Gain
+  table.col-md-7
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-conditions-6 name="6" type="checkbox" value="1"
+          label for="checkboxFiveInput-conditions-6"
+      td.checkbox-text
+        label Degenerative Joint Pain
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-conditions-7 name="7" type="checkbox" value="1"
+          label for="checkboxFiveInput-conditions-7"
+      td.checkbox-text
+        label Osteoporosis
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-conditions-8 name="8" type="checkbox" value="1"
+          label for="checkboxFiveInput-conditions-8"
+      td.checkbox-text
+        label Inflammation
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-conditions-9 name="9" type="checkbox" value="1"
+          label for="checkboxFiveInput-conditions-9"
+      td.checkbox-text
+        label Chronic Stress

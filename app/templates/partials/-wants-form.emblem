@@ -1,0 +1,23 @@
+form#wants-form
+  table
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-1 name="1" type="checkbox" value="1"
+          label for="checkboxFiveInput-1"
+      td.checkbox-text
+        label I want to look healthier and fitter
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-2 name="2" type="checkbox" value="1"
+          label for="checkboxFiveInput-2"
+      td.checkbox-text
+        label I want to feel better physically
+    tr
+      td.checkbox-q
+        .checkboxFive
+          input#checkboxFiveInput-3 name="3" type="checkbox" value="1"
+          label for="checkboxFiveInput-3"
+      td.checkbox-text
+        label I want to function better at work and home

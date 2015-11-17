@@ -1,0 +1,14 @@
+//custom variables
+$bg-light: darken(#FFF, 5%);
+$bg-green: #9ec864;
+$nav-link-clr: lighten(#8e7d7f,10%);
+$checkbox-tick: green;
+
+$bg-color1: darken($bg-green,20%);
+
+//Bootstrap Overrides
+$navbar-inverse-bg: lighten(#000,3%) !default;
+$navbar-inverse-link-color: darken(#FFF,20%) !default;
+$navbar-inverse-link-hover-color: $bg-green;
+
+$screen-sm:  900px !default;

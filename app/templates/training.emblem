@@ -1,8 +1,15 @@
 .cd-main-content.navigation-content
-	.cd-scrolling-bg.cd-color-2.first-item
+
+	.cd-fixed-bg.cd-bg-6.first-item
+		.cd-fixed-bg-content
+
+			h2 style="margin:2em;" Evolved Training Methods
+			=ember-youtube ytid="cVfgLRjhkhc"  autoplay=true
+
+	.cd-scrolling-bg.cd-color-2
 		.cd-container
 			p
-				strong Services
+				strong Corrective Exersize to High Performance Training
 			p
 				| Our exercise programs are based on the training and teachings of the world-renowned&nbsp;
 				a  href="http://chekinstitute.com/Advanced_Training_Programs/" target="blank"
@@ -16,14 +23,10 @@
 
 			p style="float:left" The C.H.E.K approach to corrective exercise can assist you to overcome these conditions, and more.
 
-	.cd-fixed-bg.cd-bg-6
+	.cd-fixed-bg.cd-bg-6 style="min-height:500px;"
+
 		.cd-fixed-bg-content
-
-			h2 style="margin:2em;"
-				| Let's Get Training!
-
-			img.text-center src="assets/images/iphone6.png" height=300
-			p Download Our New App
+			h2 style="margin:2em;" Programs To Restore<br> Optimal Health and Vitality
 
 	.cd-scrolling-bg.cd-color-2
 		.cd-container

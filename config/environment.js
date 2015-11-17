@@ -15,7 +15,7 @@ module.exports = function(environment) {
 
 		contentSecurityPolicy: {
 			'default-src': "'none'",
-			'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com  https://api.flickr.com/services/rest",
+			'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://www.youtube.com/iframe_api https://s.ytimg.com/yts/jsbin/www-widgetapi-vflpCdzwa/www-widgetapi.js use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com  https://api.flickr.com/services/rest",
 			'font-src': "'self' data: use.typekit.net https://fonts.gstatic.com https://fonts.googleapis.com",
 			'connect-src': "'self' ws://localhost:35729/livereload",
 			'img-src': "'self'",

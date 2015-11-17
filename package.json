@@ -41,6 +41,7 @@
     "ember-export-application-global": "^1.0.2",
     "ember-scroll-to": "0.4.0",
     "ember-uni-form": "2.0.0",
+    "ember-youtube": "0.4.2",
     "liquid-fire": "0.21.3",
     "readmore-js": "2.1.0"
   }

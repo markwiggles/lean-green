@@ -1,13 +1,13 @@
 main.cd-main-content.navigation-content
 	.cd-fixed-bg.cd-bg-1
 		.cd-fixed-bg-content.col-md-12
-			h1.first-item style="font-weight:bold;padding-bottom:50px;"
+			h1.first-item style="font-weight:bold;padding-bottom:50px;margin-top:200px;"
 					| Let's Get You Fitter and Healthier Sooner!
-			.fixed-col.col-md-6.col-xs-6
+			.fixed-col.col-md-6.col-xs-6 style="margin-left:-2em;"
 				img src="assets/images/iphone6.png" height=200
 				p Download Our New App
-			.fixed-col.col-md-6.col-xs-6
-				img src="assets/images/perf-pack.png" height=200
+			.fixed-col.col-md-6.col-xs-6 style="margin-left:2em;"
+				img src="assets/images/perf-pack.png" height=180
 				p Shop For Healthy Food
 	.cd-scrolling-bg.cd-color-1
 		.cd-container
@@ -22,9 +22,9 @@ main.cd-main-content.navigation-content
 			h2.form-heading What Benefits Do You Want?
 			=partial 'partials/wants-form'
 
-	.cd-scrolling-bg.cd-color-1
+	.cd-scrolling-bg.cd-color-2
 		.cd-container
-			h3 The New You
+			h3 The New Version of You
 			img.pull-right src="assets/images/home-jump.png" height=300
 			p Lose weight, shed bodyfat, gain weight, build muscle, shape your body, enhance your physique, compete, improve your posture, improve your movement grace.
 			p Relieve stress, increase energy, enhance relaxation, rehabilitate injuries, achieve vibrant health, gain vitality, like what you see in the mirror, feel great naked!
@@ -36,7 +36,7 @@ main.cd-main-content.navigation-content
 			h2.form-heading style="margin-top:4em" What Are Your Goals?
 			=partial 'partials/goals-form'
 
-	.cd-scrolling-bg.cd-color-1
+	.cd-scrolling-bg.cd-color-3
 		.cd-container
 			img.pull-right src="assets/images/jarrod-spot.jpg" height=250
 			p You will achieve better health, strength, fitness and flexibility by keeping you accountable and consistent in performing your personalised healthy lifestyle plan.

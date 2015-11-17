@@ -2,7 +2,7 @@
 
 	.cd-fixed-bg.cd-bg-5.first-item
 		.cd-fixed-bg-content
-			h2 style="margin-top:2em;" It’s time our community got<br><br><strong>VEGUCATED</strong><br> <br> LEAN & GREEN style!
+			h2 style="margin-top:2em;" It’s time our community got<br><strong>VEGUCATED</strong><br> LEAN & GREEN style!
 
 	.cd-scrolling-bg.cd-color-2
 		.cd-container
@@ -14,7 +14,7 @@
 
 	.cd-fixed-bg.cd-bg-5
 		.cd-fixed-bg-content
-			h2 style="margin-top:2em;" <strong>Cutting Edge Science</strong><br><br>based on<br><strong><br>Plant-Based Nutrition</strong>
+			h2 style="margin-top:2em;" <strong>Cutting Edge Science</strong><br>based on<br><strong>Plant-Based Nutrition</strong>
 
 	.cd-scrolling-bg.cd-color-1
 		.cd-container

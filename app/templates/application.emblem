@@ -1,4 +1,6 @@
 
+h1 Welcome
+
 nav.navbar.navbar-inverse.navbar-fixed-top
 	.container-fluid
 		.navbar-header
@@ -29,4 +31,4 @@ nav.navbar.navbar-inverse.navbar-fixed-top
 					link-to 'shop'
 						| Shop
 
-=liquid-outlet class="navigation-content"
+=outlet class="navigation-content"

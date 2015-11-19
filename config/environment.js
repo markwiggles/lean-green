@@ -13,12 +13,27 @@ module.exports = function(environment) {
 			}
 		},
 
+		"spree": {
+			signinPath: 'signin',
+			signupPath: 'signup',
+			accountPath: 'account'
+		},
+
+		"simple-auth": {
+			localStorageKey: 'spree-ember:session',
+			authorizer: 'simple-auth-authorizer:spree',
+			crossOriginWhitelist: ['http://localhost:3000'],
+			authenticationRoute: 'spree.signin',
+			routeAfterAuthentication: "spree.products",
+			routeIfAlreadyAuthenticated: "spree.products"
+		},
+
 		contentSecurityPolicy: {
 			'default-src': "'none'",
 			'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://www.youtube.com/iframe_api https://s.ytimg.com/yts/jsbin/www-widgetapi-vflpCdzwa/www-widgetapi.js use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
 			'font-src': "'self' data: use.typekit.net https://fonts.gstatic.com https://fonts.googleapis.com",
 			'connect-src': "'self' ws://localhost:35729/livereload localhost:3000",
-			'img-src': "'self'",
+			'img-src': "'self' localhost:3000",
 			'style-src': "'self' 'unsafe-inline' use.typekit.net  https://fonts.googleapis.com",
 			'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
 		},
@@ -30,14 +45,14 @@ module.exports = function(environment) {
 	};
 
 	ENV["spree"] = {
-	  apiHost: "http://localhost:3000",
-	  namespace: "api/ams",
-	  mount: "/shop",
-	  productsPath: "products",
-	  cartPath: "cart",
-	  checkoutPath: "checkout",
-	  ordersPath: "orders",
-	  taxonsPath: "t"
+		apiHost: "http://localhost:3000",
+		namespace: "api/ams",
+		mount: "/shop",
+		productsPath: "products",
+		cartPath: "cart",
+		checkoutPath: "checkout",
+		ordersPath: "orders",
+		taxonsPath: "t"
 	};
 
 

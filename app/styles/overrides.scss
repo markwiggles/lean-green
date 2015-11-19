@@ -12,3 +12,13 @@ $navbar-inverse-link-color: darken(#FFF,20%) !default;
 $navbar-inverse-link-hover-color: $bg-green;
 
 $screen-sm:  1012px !default;
+
+
+// Background color for the top bar
+$topbar-bg-color: red;
+$topbar-bg: $topbar-bg-color;
+
+// Height and margin
+// $topbar-height: rem-calc(45);
+$topbar-height: 200px;
+$topbar-margin-bottom: 0;

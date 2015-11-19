@@ -1,6 +1,12 @@
 // @import "_variables";
-@import "reset";
+$topbar-bg-color: black;
+@import "normalize";
+@import "foundation";
+// @include foundation-everything;
+
+// @import "reset";
 @import "overrides";
+
 // @import "bootstrap";
 $bg-light: darken(#FFF, 5%);
 body,
@@ -22,25 +28,37 @@ html {
 HEADER
 --------------------------------------------------------------------------------
 */
-.navbar-inverse {
-  height: 120px;
-}
-.navbar-brand {
-  margin: 0;
-  padding: 0;
-  img {
-    height: 120px;
+.top-bar {
+  // height: 120px;
+  .title-area {
+    margin: 0;
+    padding: 0;
+    img {
+      height: 120px;
+    }
+  }
+  .top-bar-section {
+    #user-menu {
+      color: #fff;
+      margin-right: 1em;
+    }
+    #nav-menu {
+      margin-top: 70px;
+      li {
+        letter-spacing: 0.2em;
+      }
+    }
   }
 }
-.navbar-nav {
-  margin-top: 70px;
-  li {
-    letter-spacing: 0.2em;
-  }
+/*
+--------------------------------------------------------------------------------
+SPREE
+--------------------------------------------------------------------------------
+*/
+.shop-content {
+  margin-top: 150px;
 }
-.navbar-collapse {
-  background-color: black;
-}
+
 /*
 --------------------------------------------------------------------------------
 MAIN

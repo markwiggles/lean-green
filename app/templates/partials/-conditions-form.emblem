@@ -1,5 +1,5 @@
 form#conditions-form
-  table.col-md-5
+  table.large-5.columns
     tr
       td.checkbox-q
         .checkboxFive
@@ -35,7 +35,7 @@ form#conditions-form
           label for="checkboxFiveInput-conditions-5"
       td.checkbox-text
         label Weight Gain
-  table.col-md-7
+  table.large-7.columns
     tr
       td.checkbox-q
         .checkboxFive

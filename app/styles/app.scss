@@ -144,6 +144,14 @@ MAIN
   line-height: 1.6;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   z-index: 2;
+    form,
+    table,
+    table tr,
+    label {
+      background-color: transparent;
+      border: none;
+      // color: $white-text;
+    }
 }
 iframe {
   width: 540px;
@@ -306,6 +314,7 @@ form {
   vertical-align: top;
   text-align: left;
   padding-left: 1em;
+  padding-top: 1.3em;
   label {
     font-size: 2em;
     font-weight: normal;

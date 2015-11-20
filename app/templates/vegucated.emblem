@@ -18,6 +18,6 @@
 
 	.cd-scrolling-bg.cd-color-1
 		.cd-container
-			img.pull-right src="assets/images/green-man.jpg" height=300
+			img.right src="assets/images/green-man.jpg" height=300
 			p The LEAN & GREEN Nutrition Program will educate you on the most cutting edge science and research available on plant-based nutrition. It will open you up to a new world of healthy, cruelty-free meal choices. It will help you to bring to life this new knowledge by providing you with the recipes, cooking classes and support you need to make this a sustainable healthy lifestyle choice, not just a diet!
 			p This is a way of eating that aims to provide you with optimal health for life and control over your eating habits for good and you can be sure LEAN & GREEN will support you every step of the way!

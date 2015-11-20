@@ -2,20 +2,24 @@
 	nav.top-bar role="navigation" style="height:120px;background-color:black;"
 		ul.title-area
 			li.name
-				img src="assets/images/lean-green-logo-simple.png" height="120"
+				img src="assets/images/lean-green-logo-simple.png"
 			li.toggle-topbar.menu-icon
 				a Menu
+
+
+				/ THE USER LOGIN TO SHOP MENU
 		section.top-bar-section
 			ul.right#user-menu
-				if session
-					if session.isAuthenticated
-						link-to 'spree.account' | Account
-					else
-						link-to 'spree.signin' | Login
+				li
+					if session
+						if session.isAuthenticated
+							link-to 'spree.account' | Account
+						else
+							link-to 'spree.signin' | Login
 
+				=partial 'partials/cart'
 
-
-
+							/ THE NAVIGATION MENU
 
 			ul.right#nav-menu
 				li

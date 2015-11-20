@@ -1,0 +1,7 @@
+<li>
+	{{#if spree.currentOrder}}
+		{{#link-to 'spree.cart'}}
+			Cart: {{spree.currentOrder.itemCount}}
+		{{/link-to}}
+	{{/if}}
+</li>

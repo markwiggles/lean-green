@@ -1,18 +1,20 @@
 main.cd-main-content.navigation-content
-	.cd-fixed-bg.cd-bg-1
-		.cd-fixed-bg-content.col-md-12
-			h1.first-item style="font-weight:bold;padding-bottom:50px;margin-top:200px;"
+	.cd-fixed-bg.cd-bg-1.first-item
+		.cd-fixed-bg-content.contain-to-grid.first-item
+			h1 style="font-weight:bold;padding-bottom:50px;"
 					| Let's Get You Fitter and Healthier Sooner!
-			.fixed-col.col-md-6.col-xs-6 style="margin-left:-2em;"
-				img src="assets/images/iphone6.png" height=200
+			.fixed-col.large-3.columns style="margin-left:-2em;"
+				link-to "spree.products"
+					img.image-ease-out src="assets/images/iphone6.png"
 				p Download Our New App
-			.fixed-col.col-md-6.col-xs-6 style="margin-left:2em;"
-				img src="assets/images/perf-pack.png" height=180
+			.fixed-col.large-3.columns style="margin-left:2em;"
+				link-to "spree.products"
+					img.image-ease-out src="assets/images/perf-pack.png"
 				p Shop For Healthy Food
 	.cd-scrolling-bg.cd-color-1
 		.cd-container
 			h3 Get Back In Control of Your Life
-			img.pull-right src="assets/images/home-image-success.jpg" height=250
+			img.right src="assets/images/home-image-success.jpg" height=250
 			p We design personal programmes to restore the balance in your life, enabling you to have more time, energy, money, intimacy, and fun.
 			p During your session you will clear away physical and emotional clutter,
 				define your priorities, set goals, and begin to take the steps required to reach them.
@@ -25,7 +27,7 @@ main.cd-main-content.navigation-content
 	.cd-scrolling-bg.cd-color-2
 		.cd-container
 			h3 The New Version of You
-			img.pull-right src="assets/images/home-jump.png" height=300
+			img.right src="assets/images/home-jump.png"
 			p Lose weight, shed bodyfat, gain weight, build muscle, shape your body, enhance your physique, compete, improve your posture, improve your movement grace.
 			p Relieve stress, increase energy, enhance relaxation, rehabilitate injuries, achieve vibrant health, gain vitality, like what you see in the mirror, feel great naked!
 			p Run faster, jump higher, perform at your peak in your sport, maximise your daily strength, improve your work performance,
@@ -38,7 +40,7 @@ main.cd-main-content.navigation-content
 
 	.cd-scrolling-bg.cd-color-3
 		.cd-container
-			img.pull-right src="assets/images/jarrod-spot.jpg" height=250
+			img.right src="assets/images/jarrod-spot.jpg"
 			p You will achieve better health, strength, fitness and flexibility by keeping you accountable and consistent in performing your personalised healthy lifestyle plan.
 			p You will improve your mobility, coordination and balance, to move better, look great and feel fantastic!
 			p You will be fitter and stronger, enhancing your confidence and self-esteem.

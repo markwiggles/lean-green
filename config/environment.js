@@ -33,7 +33,7 @@ module.exports = function(environment) {
 			'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://www.youtube.com/iframe_api https://s.ytimg.com/yts/jsbin/www-widgetapi-vflpCdzwa/www-widgetapi.js use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
 			'font-src': "'self' data: use.typekit.net https://fonts.gstatic.com https://fonts.googleapis.com",
 			'connect-src': "'self' ws://localhost:35729/livereload localhost:3000",
-			'img-src': "'self' localhost:3000",
+			'img-src': "'self' data: localhost:3000",
 			'style-src': "'self' 'unsafe-inline' use.typekit.net  https://fonts.googleapis.com",
 			'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
 		},

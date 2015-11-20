@@ -1,10 +1,10 @@
 // @import "_variables";
 $topbar-bg-color: black;
+$topBarHeight: 120px;
+$text-color: darken(grey,30%);
+$white-text: darken(#fff,10%);
 @import "normalize";
 @import "foundation";
-// @include foundation-everything;
-
-// @import "reset";
 @import "overrides";
 
 // @import "bootstrap";
@@ -23,27 +23,45 @@ html {
   overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
 }
+.contain-to-grid {
+  background-color: transparent;
+}
 /*
 --------------------------------------------------------------------------------
 HEADER
 --------------------------------------------------------------------------------
 */
 .top-bar {
+
   // height: 120px;
   .title-area {
     margin: 0;
     padding: 0;
+    height: inherit;
     img {
       height: 120px;
     }
   }
   .top-bar-section {
+    height: inherit;
     #user-menu {
       color: #fff;
       margin-right: 1em;
+      .cart {
+        width: 100px;
+        .cart-items,
+        .cart-link {
+          display: inline-block;
+          width: 20px;
+          margin:0 !important;
+          padding:0 !important;
+        }
+      }
     }
     #nav-menu {
-      margin-top: 70px;
+      float:right;
+      clear: right;
+      margin-top: 30px;
       li {
         letter-spacing: 0.2em;
       }
@@ -64,47 +82,11 @@ SPREE
 MAIN
 --------------------------------------------------------------------------------
 */
-iframe {
-  width: 540px;
-  height: 304px;
-}
-.cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 768px;
-  margin: 0 auto;
-  img {
-    padding: 1em 0 1em 2em;
-    border-radius: 10px;
-  }
-  p {
-    text-align: left;
-    font-size: 2em;
-    text-align: justify;
-    text-justify: inter-word;
-    font-weight: 100px;
-  }
-  h3 {
-    text-align: left;
-    font-size: 3em;
-  }
-}
-.cd-container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
-}
 .cd-main-content {
   /* you need to assign a min-height to the main content so that the children can inherit it*/
   height: 100%;
   position: relative;
   z-index: 1;
-}
-
-//allow for header
-.first-item {
-  margin-top: 120px;
 }
 .cd-fixed-bg {
   position: relative;
@@ -135,9 +117,24 @@ iframe {
 }
 .cd-fixed-bg-content {
   margin-top: 100px;
+  h1,
+  h2 {
+    color: $white-text;
+  }
   h2 {
     margin-top: 2em;
     line-height: 2em;
+  }
+  form,
+  table,
+  table tr,
+  label {
+    background-color: transparent;
+    border: none;
+    color: $white-text;
+  }
+  .checkbox-text {
+    font-size: 1.3rem;
   }
 }
 .cd-scrolling-bg {
@@ -148,9 +145,69 @@ iframe {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
+iframe {
+  width: 540px;
+  height: 304px;
+}
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+  img {
+    padding: 1em 0 1em 2em;
+    border-radius: 10px;
+    height: 300px;
+  }
+  p {
+    text-align: left;
+    font-size: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 100px;
+  }
+  h3 {
+    text-align: left;
+    font-size: 3em;
+  }
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+//allow for header
+.first-item {
+  margin-top: 120px;
+}
+.fixed-col {
+  height: 300px;
+  p {
+    font-size: 1rem;
+  }
+  img {
+    height: 220px;
+    transition: height 0.3s;
+    -webkit-transition: height 0.3s;
+  }
+  img:hover {
+        height: 250px;
+        font-size: 1.3rem;
+  }
+}
+/*
+--------------------------------------------------------------------------------
+COLORS
+--------------------------------------------------------------------------------
+*/
 .cd-scrolling-bg.cd-color-1 {
   background-color: #3d3536;
-  color: #a6989a;
+  h3,
+  p {
+    color: #a6989a;
+  }
 }
 .cd-scrolling-bg.cd-color-2 {
   background-color: #99a478;
@@ -200,8 +257,8 @@ blockquote {
   text-align: justify;
   text-justify: inter-word;
   font-size: 1.8em;
-
-  // background: darken(#f9f9f9,20%);
+  background: transparent;
+  color: $text-color;
   border-left: 10px solid darken(#99a478,10%);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
@@ -238,7 +295,6 @@ form {
 }
 .form-heading {
   font-size: 2.5em !important;
-  margin-bottom: 1.5em;
 }
 .checkbox-q {
   vertical-align: top;
@@ -256,10 +312,10 @@ form {
   }
 }
 #wants-form {
-  max-width: 45em;
+  max-width: 55rem;
 }
 #goals-form {
-  max-width: 30em;
+  max-width: 30rem;
 }
 #conditions-form {
   width: 100%;
@@ -276,7 +332,13 @@ input[type="checkbox"] {
   width: 25px;
   position: relative;
   float: left;
+  margin-top: 15px;
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    margin-left: 0;
+  }
 }
+
 /**
  * Create the box for the checkbox
  */

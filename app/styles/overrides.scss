@@ -1,24 +1,4 @@
-//custom variables
-$bg-light: darken(#FFF, 5%);
-$bg-green: #9ec864;
-$nav-link-clr: lighten(#8e7d7f,10%);
-$checkbox-tick: green;
-
-$bg-color1: darken($bg-green,20%);
-
-//Bootstrap Overrides
-$navbar-inverse-bg: lighten(#000,3%) !default;
-$navbar-inverse-link-color: darken(#FFF,20%) !default;
-$navbar-inverse-link-hover-color: $bg-green;
-
-$screen-sm:  1012px !default;
-
-
-// Background color for the top bar
-$topbar-bg-color: red;
-$topbar-bg: $topbar-bg-color;
-
-// Height and margin
-// $topbar-height: rem-calc(45);
-$topbar-height: 200px;
-$topbar-margin-bottom: 0;
+//FOUNDATION OVERRIDES
+$topbar-bg-color: black;
+$topBarHeight: 120px;
+$topbar-breakpoint: 986px;

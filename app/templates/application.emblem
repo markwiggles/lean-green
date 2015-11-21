@@ -1,13 +1,13 @@
 .fixed
-	nav.top-bar role="navigation" style="height:120px;background-color:black;"
+	nav.top-bar role="navigation" data="data-topbar" style="height:120px;background-color:black;"
 		ul.title-area
-			li.name
+			li.name.left
 				img src="assets/images/lean-green-logo-simple.png"
-			li.toggle-topbar.menu-icon
+			li.toggle-topbar.menu-icon style="color:#fff;"
 				a Menu
 
-
 				/ THE USER LOGIN TO SHOP MENU
+
 		section.top-bar-section
 			ul.right#user-menu
 				li

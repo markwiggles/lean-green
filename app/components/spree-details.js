@@ -3,7 +3,7 @@
 // export default spreeDetails;
 
 import Ember from 'ember';
-import layout from '../templates/components/spree-details';
+import layout from '../templates/spree/components/spree-details';
 /**
   A mini "details" panel for the Spree Checkout Route.
 

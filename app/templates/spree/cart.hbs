@@ -1,6 +1,6 @@
 <div class="shop-content navigation-content">
   <div class="row">
-    <h1>Cart</h1>
+    <h1>{{fa-icon icon="shopping-cart"}} Cart</h1>
     <div class="small-12 columns">
       {{#if spree.currentOrder.lineItems.length}}
         {{spree-lineitems lineItems=spree.currentOrder.lineItems canRemoveItems=true}} {{spree-details order=spree.currentOrder}}

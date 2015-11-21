@@ -35,7 +35,7 @@ module.exports = function(environment) {
 			'connect-src': "'self' ws://localhost:35729/livereload localhost:3000",
 			'img-src': "'self' data: localhost:3000",
 			'style-src': "'self' 'unsafe-inline' use.typekit.net  https://fonts.googleapis.com",
-			'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
+			'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com www.youtube.com"
 		},
 
 		APP: {

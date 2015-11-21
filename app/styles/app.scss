@@ -1,11 +1,13 @@
 // @import "_variables";
 $topbar-bg-color: black;
 $topBarHeight: 120px;
+$topbar-breakpoint: 986px;
 $text-color: darken(grey,30%);
 $white-text: darken(#fff,10%);
 @import "normalize";
 @import "foundation";
 @import "overrides";
+@import "bower_components/font-awesome/scss/font-awesome";
 
 // @import "bootstrap";
 $bg-light: darken(#FFF, 5%);
@@ -53,13 +55,13 @@ HEADER
         .cart-link {
           display: inline-block;
           width: 20px;
-          margin:0 !important;
-          padding:0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
         }
       }
     }
     #nav-menu {
-      float:right;
+      float: right;
       clear: right;
       margin-top: 30px;
       li {
@@ -133,8 +135,11 @@ MAIN
     border: none;
     color: $white-text;
   }
-  .checkbox-text {
-    font-size: 1.3rem;
+  .checkboxFive {
+    margin-top: 15px;
+    .checkbox-text {
+      font-size: 1.3rem;
+    }
   }
 }
 .cd-scrolling-bg {
@@ -144,14 +149,16 @@ MAIN
   line-height: 1.6;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   z-index: 2;
-    form,
-    table,
-    table tr,
-    label {
-      background-color: transparent;
-      border: none;
-      // color: $white-text;
-    }
+  form,
+  table,
+  table tr,
+  label {
+    background-color: transparent;
+    border: none;
+  }
+  .checkboxFive {
+    margin-top: 15px;
+  }
 }
 iframe {
   width: 540px;
@@ -201,8 +208,8 @@ iframe {
     -webkit-transition: height 0.3s;
   }
   img:hover {
-        height: 250px;
-        font-size: 1.3rem;
+    height: 250px;
+    font-size: 1.3rem;
   }
 }
 /*
@@ -341,7 +348,6 @@ input[type="checkbox"] {
   width: 25px;
   position: relative;
   float: left;
-  margin-top: 15px;
   input[type="checkbox"] + label,
   input[type="radio"] + label {
     margin-left: 0;
@@ -420,4 +426,22 @@ THE IMAGE BACKGROUNDS
 }
 .cd-fixed-bg.cd-bg-6 {
   background-image: url("images/park-image.jpg");
+}
+
+.top-bar .toggle-topbar.menu-icon a:after {
+    box-shadow: 0 10px 0 1px #FFFFFF, 0 16px 0 1px #FFFFFF, 0 22px 0 1px #FFFFFF;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+}
+.top-bar .toggle-topbar.menu-icon a {
+    color: #FFFFFF;
+    height: 34px;
+    line-height: 33px;
+    padding: 0 25px 0 0;
+    position: relative;
 }

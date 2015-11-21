@@ -3,7 +3,7 @@
 // export default spreeGrid;
 
 import Ember from 'ember';
-import layout from '../templates/components/spree-grid';
+import layout from '../templates/spree/components/spree-grid';
 /**
   A Product Grid for the Products Index and Taxons Show routes.
 

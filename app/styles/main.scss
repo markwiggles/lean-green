@@ -1,8 +1,3 @@
-//FOUNDATION OVERRIDES
-$topbar-bg-color: black;
-$topBarHeight: 120px;
-$topbar-breakpoint: 986px;
-
 @import "bower_components/font-awesome/scss/font-awesome";
 
 //CUSTOM VARIBALES
@@ -13,13 +8,11 @@ $bg-light: darken(#FFF, 5%);
 $bg-green: #9ec864;
 $nav-link-clr: lighten(#8e7d7f,10%);
 $checkbox-tick: green;
-
 body,
 html {
   font-family: "Roboto", sans-serif;
   color: #3d3536;
   background-color: white;
-  text-align: center;
   height: 100%;
 }
 
@@ -36,22 +29,32 @@ html {
 HEADER
 --------------------------------------------------------------------------------
 */
-.top-bar {
-
-  // height: 120px;
-  .title-area {
-    margin: 0;
-    padding: 0;
-    height: inherit;
+.fixed {
+  background-color: black;
+  height: 120px;
+}
+.title-area {
+  z-index:100;
+  margin: 0;
+  padding: 0;
+  height: 120px;
+  display: inline-block;
+  .name {
+    height: 120px;
     img {
       height: 120px;
     }
   }
+}
+.top-bar {
+  height: 120px;
+  text-align: left !important;
   .top-bar-section {
-    height: inherit;
+    height: 120px;
+    background-color: black;
     #user-menu {
+      float: right;
       color: #fff;
-      margin-right: 1em;
       .cart {
         width: 100px;
         .cart-items,
@@ -73,13 +76,33 @@ HEADER
     }
   }
 }
+.top-bar .name h1 a:before {
+  background-image: url(images/logo.png);
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 18px;
+  margin-right: 10px;
+  position: relative;
+  width: 18px;
+}
+
+// Change things up when the top-bar is expanded
+.top-bar.expanded {
+  background-color: black;
+  text-align: left;
+  #user-menu,
+  #nav-menu {
+    text-align: center;
+  }
+}
 /*
 --------------------------------------------------------------------------------
 SPREE
 --------------------------------------------------------------------------------
 */
 .shop-content {
-  margin-top: 150px;
+  // margin-top: 150px;
 }
 
 /*
@@ -413,38 +436,39 @@ THE IMAGE BACKGROUNDS
 --------------------------------------------------------------------------------
 */
 .cd-fixed-bg.cd-bg-1 {
-  background-image: url("images/life.jpg");
+  background-image: url(images/life.jpg);
 }
 .cd-fixed-bg.cd-bg-2 {
-  background-image: url("images/bike-ride.jpg");
+  background-image: url(images/bike-ride.jpg);
 }
 .cd-fixed-bg.cd-bg-3 {
-  background-image: url("images/gym-bike.jpg");
+  background-image: url(images/gym-bike.jpg);
 }
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url("images/cd-background-4.jpg");
+  background-image: url(images/cd-background-4.jpg);
 }
 .cd-fixed-bg.cd-bg-5 {
-  background-image: url("images/vegetables.jpg");
+  background-image: url(images/vegetables.jpg);
 }
 .cd-fixed-bg.cd-bg-6 {
-  background-image: url("images/park-image.jpg");
+  background-image: url(images/park-image.jpg);
 }
 
-.top-bar .toggle-topbar.menu-icon a:after {
-    box-shadow: 0 10px 0 1px #FFFFFF, 0 16px 0 1px #FFFFFF, 0 22px 0 1px #FFFFFF;
-    content: "";
-    display: block;
-    height: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 16px;
-}
-.top-bar .toggle-topbar.menu-icon a {
-    color: #FFFFFF;
-    height: 34px;
-    line-height: 33px;
-    padding: 0 25px 0 0;
-    position: relative;
-}
+//
+// .top-bar .toggle-topbar.menu-icon a:after {
+//     box-shadow: 0 10px 0 1px #FFFFFF, 0 16px 0 1px #FFFFFF, 0 22px 0 1px #FFFFFF;
+//     content: "";
+//     display: block;
+//     height: 0;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     width: 16px;
+// }
+// .top-bar .toggle-topbar.menu-icon a {
+//     color: #FFFFFF;
+//     height: 34px;
+//     line-height: 33px;
+//     padding: 0 25px 0 0;
+//     position: relative;
+// }

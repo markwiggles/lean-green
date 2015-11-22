@@ -1,6 +1,0 @@
-.cd-main-content.navigation-content
-	.cd-scrolling-bg.cd-color-2.first-item style="min-height:800px;"
-		.cd-container
-			p
-				strong Order Your Healthy Products Now
-			img.pull-left src="assets/images/perf-pack.png" height=300

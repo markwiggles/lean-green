@@ -13,6 +13,9 @@ module.exports = function(defaults) {
 
 	// Use `app.import` to add additional libraries to the generated
 	// output files.
+	app.import('bower_components/foundation/js/foundation/foundation.js');
+	app.import('bower_components/foundation/js/foundation/foundation.accordion.js');
+	// app.import('bower_components/foundation/js/foundation/foundation.topbar.js');
 	//
 	// If you need to use different assets in different
 	// environments, specify an object as the first parameter. That

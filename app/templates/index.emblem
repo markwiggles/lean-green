@@ -1,5 +1,5 @@
 main.cd-main-content.navigation-content
-	.cd-fixed-bg.cd-bg-1.first-item
+	.cd-fixed-bg.cd-bg-1
 		.cd-fixed-bg-content.contain-to-grid.first-item
 			h1 style="font-weight:bold;padding-bottom:50px;"
 					| Let's Get You Fitter and Healthier Sooner!

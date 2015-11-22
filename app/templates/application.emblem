@@ -1,38 +1,4 @@
 .fixed
-	nav.top-bar role="navigation" data="data-topbar" style="height:120px;background-color:black;"
-		ul.title-area
-			li.name.left
-				img src="assets/images/lean-green-logo-simple.png"
-			li.toggle-topbar.menu-icon style="color:#fff;"
-				a Menu
-
-				/ THE USER LOGIN TO SHOP MENU
-
-		section.top-bar-section
-			ul.right#user-menu
-				li
-					if session
-						if session.isAuthenticated
-							link-to 'spree.account' | Account
-						else
-							link-to 'spree.signin' | Login
-
-				=partial 'partials/cart'
-
-							/ THE NAVIGATION MENU
-
-			ul.right#nav-menu
-				li
-					link-to 'index' | Home
-				li
-					link-to 'about' | About L&G
-				li
-					link-to 'training' | Get Training
-				li
-					link-to 'vegucated' | Get Vegucated
-				li
-					link-to 'reviews' | Raving Reviews
-				li
-					link-to 'spree.products' | Shop
+	=partial 'partials/topbar'
 
 =liquid-outlet class="navigation-content"

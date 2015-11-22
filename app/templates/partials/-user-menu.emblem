@@ -1,0 +1,9 @@
+ul#user-menu
+	li
+		if session
+			if session.isAuthenticated
+				link-to 'spree.account' | Account
+			else
+				link-to 'spree.signin' | Login
+
+	=partial 'partials/cart'

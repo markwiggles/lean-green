@@ -30,7 +30,7 @@ module.exports = function(environment) {
 
 		contentSecurityPolicy: {
 			'default-src': "'none'",
-			'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://www.youtube.com/iframe_api https://s.ytimg.com/yts/jsbin/www-widgetapi-vflpCdzwa/www-widgetapi.js use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
+			'script-src': "'self' 'unsafe-inline' 'unsafe-eval' cdnjs.cloudflare.com https://www.youtube.com/iframe_api https://s.ytimg.com/yts/jsbin/www-widgetapi-vflpCdzwa/www-widgetapi.js use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
 			'font-src': "'self' data: use.typekit.net https://fonts.gstatic.com https://fonts.googleapis.com",
 			'connect-src': "'self' ws://localhost:35729/livereload localhost:3000",
 			'img-src': "'self' data: localhost:3000",

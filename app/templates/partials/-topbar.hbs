@@ -1,0 +1,32 @@
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <img src="assets/images/lean-green-logo-simple.png">
+    </li>
+  </ul>
+  <ul>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon">
+      <a><span>MENU</span></a>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <!-- LOGIN SECTION -->
+    {{partial 'partials/user-menu'}}
+
+
+    <!-- Right Nav Section -->
+    <ul id="nav-menu">
+      <li>{{link-to 'Home' 'index'}}</li>
+      <li>{{link-to 'About L&G' 'about'}}</li>
+      <li>{{link-to 'Get Training' 'training'}}</li>
+      <li>{{link-to 'Get Vegucated' 'vegucated'}}</li>
+      <li>{{link-to 'Raving Reviews' 'reviews'}}</li>
+      <li>{{link-to 'Go Shopping' 'shopping'}}</li>
+    </ul>
+
+
+  </section>
+</nav>

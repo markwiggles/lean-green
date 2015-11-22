@@ -14,7 +14,7 @@ Router.map(function() {
   this.route('training');
   this.route('vegucated');
   this.route('reviews');
-  this.route('shop');
+  this.route('shopping');
 
   spreeRouter(this, config);
   spreeAuthRouter(this, config);

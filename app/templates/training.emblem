@@ -1,6 +1,6 @@
 .cd-main-content.navigation-content
 
-	.cd-fixed-bg.cd-bg-6.first-item
+	.cd-fixed-bg.cd-bg-6
 		.cd-fixed-bg-content
 
 			h2 style="margin:2em;" Evolved Training Methods

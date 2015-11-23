@@ -14,7 +14,7 @@ main.cd-main-content.navigation-content
 	.cd-scrolling-bg.cd-color-1
 		.cd-container
 			h3 Get Back In Control of Your Life
-			img.right src="assets/images/home-image-success.jpg" height=250
+			img.right src="assets/images/home-image-success.jpg"
 			p We design personal programmes to restore the balance in your life, enabling you to have more time, energy, money, intimacy, and fun.
 			p During your session you will clear away physical and emotional clutter,
 				define your priorities, set goals, and begin to take the steps required to reach them.

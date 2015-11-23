@@ -1,7 +1,10 @@
 .cd-main-content.navigation-content
 	.cd-scrolling-bg.cd-color-2
 		.cd-container
-			=partial 'partials/accordion'
+			=partial 'partials/plantastic'
+	.cd-scrolling-bg.cd-color-1
+		.cd-container
+			=partial 'partials/faq'
 
 	/ p
 	/ 	strong Order Your Healthy Products Now

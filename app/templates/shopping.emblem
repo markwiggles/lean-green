@@ -1,11 +1,11 @@
 .cd-main-content.navigation-content
 	.cd-scrolling-bg.cd-color-2
 		.cd-container
-			=partial 'partials/plantastic'
-	.cd-scrolling-bg.cd-color-1
+			=partial 'partials/vegomega'
+			=partial 'partials/busygreens'
+	.cd-scrolling-bg.cd-color-3
 		.cd-container
 			=partial 'partials/faq'
-
-	/ p
-	/ 	strong Order Your Healthy Products Now
-	/ img.pull-left src="assets/images/perf-pack.png" height=300
+	.cd-scrolling-bg.cd-color-2
+		.cd-container		
+			=partial 'partials/plantastic'

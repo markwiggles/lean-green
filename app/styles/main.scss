@@ -2,6 +2,8 @@
 
 //CUSTOM VARIBALES
 $lg-green: #9ec864;
+$lg-green-dark: green;
+// darken($lg-green, 60%);
 $bg-light: darken(#FFF, 5%);
 $text-color: darken(grey,30%);
 $white-text: darken(#fff,10%);
@@ -106,6 +108,40 @@ SHOPPING
 
   // margin-top: 150px;
 }
+.product-index {
+  background: -webkit-linear-gradient($lg-green,$lg-green-dark );
+  background: -o-linear-gradient($lg-green, $lg-green-dark );
+  background: -moz-linear-gradient($lg-green, $lg-green-dark );
+  background: linear-gradient($lg-green, $lg-green-dark );
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 2rem 1rem 1rem 1rem;
+  margin: 20px;
+  width: 13rem;
+  img {
+    height: 18rem;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+  .product-sell {
+    background: -webkit-linear-gradient($lg-green,$lg-green-dark );
+    background: -o-linear-gradient($lg-green, $lg-green-dark );
+    background: -moz-linear-gradient($lg-green, $lg-green-dark );
+    background: linear-gradient($lg-green, $lg-green-dark );
+    border-radius: 10px;
+    padding: 1rem;
+    // margin: 10px;
+    // width: 12rem;
+    h6 {
+      color: #fff;
+    }
+  }
+}
+
+//accordion
+.accordion-navigation .content {
+  background-color: #FFF;
+}
 .accordion .content p {
   font-size: 14px;
 }
@@ -120,6 +156,9 @@ SHOPPING
 .accordion-navigation.active > a:after {
   content: "↟";
 }
+#checkbox-hide {
+  display: none;
+}
 #plantastic {
   .logo-img {
     height: 4rem;
@@ -132,6 +171,13 @@ SHOPPING
     border: 1px solid darken(lightgrey,10%);
     padding: 0.5rem;
     border-radius: 5px;
+  }
+}
+#busygreens,
+#plantastic,
+#vegomega {
+  li {
+    font-size: 1.2rem;
   }
 }
 
@@ -240,8 +286,7 @@ iframe {
   }
   h3 {
     text-align: left;
-
-    // font-size: 3em;
+    font-size: 3em;
   }
 }
 .cd-container::after {
@@ -258,8 +303,7 @@ iframe {
 .fixed-col {
   height: 300px;
   p {
-
-    // font-size: 1rem;
+    font-size: 1.5rem;
   }
   img {
     height: 220px;
@@ -268,8 +312,7 @@ iframe {
   }
   img:hover {
     height: 250px;
-
-    // font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 }
 /*
@@ -386,8 +429,7 @@ form {
   padding-left: 1em;
   padding-top: 1.3em;
   label {
-
-    // font-size: 2em;
+    font-size: 2em;
     font-weight: normal;
   }
 }
@@ -490,4 +532,7 @@ THE IMAGE BACKGROUNDS
 }
 .cd-fixed-bg.cd-bg-6 {
   background-image: url(images/park-image.jpg);
+}
+.uppercase {
+  text-transform: uppercase;
 }

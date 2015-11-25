@@ -1,4 +1,5 @@
 <div class="row">
+  <br><br>
   <div class="small-12 medium-4 columns">
     {{spree-images images=selectedVariant.images}}
     {{spree-properties properties=product.productProperties}}
@@ -6,10 +7,10 @@
   <div class="small-12 medium-8 columns">
     <div class="row">
       <div class="small-12 columns">
-        <h1>{{product.name}}</h1>
+        <h1>{{{product.name}}}</h1>
         <hr>
         {{#if selectedVariant.description}}
-          <h6>{{selectedVariant.description}}</h6>
+          <h6>{{{selectedVariant.description}}}</h6>
         {{else}}
           <h6>No Description</h6>
         {{/if}}
@@ -28,6 +29,7 @@
         <button class="expand" {{action 'addToCart'}}>Add To Cart</button>
       </div>
     </div>
-
   </div>
 </div>
+{{partial 'partials/busygreens'}}
+{{partial 'partials/faq'}}

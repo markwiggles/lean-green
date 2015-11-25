@@ -1,0 +1,7 @@
+#liquid-spacer-demo
+  label
+    = input type="checkbox" id="withEmberHelper" checked=showLongMessage id="checkbox-hide"
+    |  check here
+  =liquid-spacer growDuration=150 class="checkbox"
+    =if showLongMessage
+      =partial 'partials/busygreens'

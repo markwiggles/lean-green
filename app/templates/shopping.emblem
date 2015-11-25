@@ -1,11 +1,14 @@
 .cd-main-content.navigation-content
 	.cd-scrolling-bg.cd-color-2
 		.cd-container
+			h2.left Lean & Green Products
+			link-to 'Shop Now >>' 'spree.products' class="button right"
+			hr
 			=partial 'partials/vegomega'
 			=partial 'partials/busygreens'
 	.cd-scrolling-bg.cd-color-3
 		.cd-container
 			=partial 'partials/faq'
 	.cd-scrolling-bg.cd-color-2
-		.cd-container		
+		.cd-container
 			=partial 'partials/plantastic'

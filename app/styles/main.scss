@@ -93,10 +93,18 @@ HEADER
 SHOPPING
 --------------------------------------------------------------------------------
 */
-.shop-content {
+.shop-content, #shop-modal {
   h1,h2,h3 {
     color: $lg-green-dark;
   }
+#shopping {
+  img {
+    max-height: 400px;
+  }
+}
+#myModal {
+  text-align: center;
+}
 
   // margin-top: 150px;
 }

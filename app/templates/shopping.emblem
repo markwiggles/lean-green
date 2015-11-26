@@ -1,5 +1,7 @@
 .cd-main-content.navigation-content
 	.cd-scrolling-bg
-		.cd-container
-			img src="assets/images/leangreen-logo.png"
+		#shopping.row
+			partial 'partials/shopping-carousel'
 			link-to 'Browse Products' 'spree.products' class="button right"
+
+			partial 'partials/shop-modal'

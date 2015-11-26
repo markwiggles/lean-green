@@ -16,6 +16,7 @@ module.exports = function(defaults) {
 	app.import('bower_components/foundation/js/foundation/foundation.js');
 	app.import('bower_components/foundation/js/foundation/foundation.accordion.js');
 	app.import('bower_components/foundation/js/foundation/foundation.topbar.js');
+	app.import('bower_components/foundation/js/foundation/foundation.reveal.js');
 	//
 	// If you need to use different assets in different
 	// environments, specify an object as the first parameter. That

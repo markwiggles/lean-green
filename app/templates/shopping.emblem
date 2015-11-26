@@ -1,14 +1,5 @@
 .cd-main-content.navigation-content
-	.cd-scrolling-bg.cd-color-2
+	.cd-scrolling-bg
 		.cd-container
-			h2.left Lean & Green Products
-			link-to 'Shop Now >>' 'spree.products' class="button right"
-			hr
-			=partial 'partials/vegomega'
-			=partial 'partials/busygreens'
-	.cd-scrolling-bg.cd-color-3
-		.cd-container
-			=partial 'partials/faq'
-	.cd-scrolling-bg.cd-color-2
-		.cd-container
-			=partial 'partials/plantastic'
+			img src="assets/images/leangreen-logo.png"
+			link-to 'Browse Products' 'spree.products' class="button right"

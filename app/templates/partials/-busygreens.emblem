@@ -1,10 +1,10 @@
 #busygreens
-	h2 Busy Greens
+	hr
 	/ img.right src="assets/images/busy-greens-apple-front.png"
 	p When I did my research and realized that consuming a greens powder was cheaper, more convenient, and had the same nutritional benefits as juicing fresh fruits and vegetables, the only thing left to do was find the tastiest one available.
 	p I needed to find one in the first place because I had slipped into the habit of skipping my green juice in the morning because it just wasn't convenient to make it with three kids vying for my attention.
 	p I now add Busy Greens to my shaker with the VegOmega+ and Plantastic Pro and I'm done when I'm on the run!  
-	p
+	h3
 		strong So here’s what's inside:
 	ul
 		li The antioxidant power of 10 servings of dark, leafy greens and brightly colored fruits
@@ -13,7 +13,7 @@
 		li Refreshing and great tasting green apple or strawberry flavour
 
 
-	p
+	h3
 		strong Also added:
 	ul
 		li Cinnamon for healthy blood sugar levels
@@ -23,7 +23,8 @@
 		li SuperSorb for enhanced absorption and better results
 
 	p You won't find a better greens powder than this. I know because I've tried. Add it to your nutrition arsenal today for just $2 a day.
-	p
+
+	h3
 		strong Do you know more about the incredible benefits of phytonutrients and antioxidants?
 	ul
 		li Cellular nourishment and protection*
@@ -40,5 +41,5 @@
 		li Help slow aging of your skin and dulling of your hair*
 		li Restore healthy digestion*
 		li Inhibit the hardening of arteries*
-	p
+	h3
 		strong Still want to know more about busy greens?

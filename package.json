@@ -43,6 +43,7 @@
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
     "ember-normalize": "0.0.9",
+    "ember-truncate": "0.0.2",
     "ember-youtube": "0.4.2",
     "liquid-fire": "0.20.4",
     "spree-ember-auth": "0.0.1-beta.1",

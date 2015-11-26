@@ -1,16 +1,5 @@
 @import "bower_components/font-awesome/scss/font-awesome";
 
-//CUSTOM VARIBALES
-$lg-green: #9ec864;
-$lg-green-dark: green;
-// darken($lg-green, 60%);
-$bg-light: darken(#FFF, 5%);
-$text-color: darken(grey,30%);
-$white-text: darken(#fff,10%);
-$bg-light: darken(#FFF, 5%);
-$bg-green: $lg-green;
-$nav-link-clr: lighten(#8e7d7f,10%);
-$checkbox-tick: green;
 body,
 html {
   font-family: "Roboto", sans-serif;
@@ -105,6 +94,9 @@ SHOPPING
 --------------------------------------------------------------------------------
 */
 .shop-content {
+  h1,h2,h3 {
+    color: $lg-green-dark;
+  }
 
   // margin-top: 150px;
 }
@@ -115,11 +107,12 @@ SHOPPING
   background: linear-gradient($lg-green, $lg-green-dark );
   border: 1px solid lightgrey;
   border-radius: 10px;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 1rem;
   margin: 20px;
   width: 13rem;
+  height: 20rem;
   img {
-    height: 18rem;
+    max-height: 10rem;
     width: auto;
     margin-bottom: 1rem;
   }
@@ -136,6 +129,9 @@ SHOPPING
       color: #fff;
     }
   }
+}
+.truncate-multiline--truncation-target {
+  width: 30rem;
 }
 
 //accordion
@@ -168,9 +164,10 @@ SHOPPING
     margin-right: 3rem;
   }
   .logo-border {
-    border: 1px solid darken(lightgrey,10%);
+    background-color: lighten(lightgrey,10%);
     padding: 0.5rem;
     border-radius: 5px;
+    margin-top: 2em;
   }
 }
 #busygreens,

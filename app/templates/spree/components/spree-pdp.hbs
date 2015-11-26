@@ -1,8 +1,8 @@
 <div class="row">
-  <br><br>
+  <br>
+  <br>
   <div class="small-12 medium-4 columns">
-    {{spree-images images=selectedVariant.images}}
-    {{spree-properties properties=product.productProperties}}
+    {{spree-images images=selectedVariant.images}} {{spree-properties properties=product.productProperties}}
   </div>
   <div class="small-12 medium-8 columns">
     <div class="row">
@@ -26,10 +26,19 @@
         {{input value=quantity placeholder="Quantity"}}
       </div>
       <div class='small-12 columns'>
-        <button class="expand" {{action 'addToCart'}}>Add To Cart</button>
+        <button class="large-5 small-5 columns" {{action 'addToCart'}}>Add To Cart</button>
+        {{link-to "Keep Shopping" "spree.products" class="button large-5 small-5 columns"}}
       </div>
     </div>
   </div>
 </div>
-{{partial 'partials/busygreens'}}
-{{partial 'partials/faq'}}
+{{!-- ADD THE PRODUCT INFORMATION --}}
+{{#is-equal param1=product.name param2="busy" }}
+  {{partial 'partials/busygreens'}} {{partial 'partials/faq'}}
+{{/is-equal}}
+{{#is-equal param1=product.name param2="plantastic" }}
+  {{partial 'partials/plantastic'}}
+{{/is-equal}}
+{{#is-equal param1=product.name param2="vegomega" }}
+  {{partial 'partials/vegomega'}}
+{{/is-equal}}

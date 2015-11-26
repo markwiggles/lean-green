@@ -10,7 +10,6 @@ export default Ember.View.extend({
 		$('.top-bar-section ul li').click(function() {
         $('.top-bar').removeClass('expanded');
     });
-
   }
 
 

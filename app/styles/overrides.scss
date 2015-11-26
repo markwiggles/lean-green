@@ -1,8 +1,23 @@
+
+//CUSTOM VARIBALES
+$lg-green: #9ec864;
+$lg-green-dark: #228B22;
+// darken($lg-green, 60%);
+$bg-light: darken(#FFF, 5%);
+$text-color: darken(grey,30%);
+$white-text: darken(#fff,10%);
+$bg-light: darken(#FFF, 5%);
+$bg-green: $lg-green;
+$nav-link-clr: lighten(#8e7d7f,10%);
+$checkbox-tick: green;
+
+
 //FOUNDATION OVERRIDES
 $topbar-bg-color: black;
 $topbar-dropdown-bg: black;
 
 $topbar-breakpoint: 1186px;
+$primary-color: $lg-green-dark;
 
 
 // Height and margin

@@ -1,8 +1,8 @@
 <div class="row">
-  {{#each products as |product|}}
+  {{#each products as |product|}}      
     {{#link-to 'spree.products.show' product}}
       <div class="small-12 medium-6 large-2 columns text-center product-index">
-        <img src= {{product.images.firstObject.largeUrl}}>
+        {{spree-pi images=product.images}}
         <div class="product-sell">
           <h6 class="product-index-name">{{{product.name}}}</h6>
           <h6 class="product-index-price">{{product.displayPrice}}</h6>

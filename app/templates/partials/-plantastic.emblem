@@ -1,11 +1,11 @@
 #plantastic
-	h2 PLANTASTIC PRO
+	hr
 
-	p
+	h3
 		strong Benefits:
 
 	ul
-		img.right src="assets/images/plantastic-pro-choc-front.png"
+		/ img.right src="assets/images/plantastic-pro-choc-front.png"
 		li Recovery, and regeneration of internal tissues and muscle mass
 		li Healthy immune system
 		li Normal response to stress and cortisol levels
@@ -20,11 +20,7 @@
 		li Slowly digested for extended energy
 		li Supersorb technology for enhanced absorption and better results
 
-
-	p With the inclusion of natural <strong>supersorb</strong> technology, Plantastic Pro stands out from the competition because it ensures your body absorbs and utilizes every ingredient for better results.
-	p The formulation of PLANTASTIC PRO is unlike any other plant protein shake. It is made from non-GMO yellow pea, brown rice and chia seed powders, giving you the amino acid profile comparable to whey, all wrapped up in a smooth texture and creamy flavour!
-
-	p
+	h3
 		strong Product inclusions that make PLANTASTIC PRO unique:
 
 	p.logo-border

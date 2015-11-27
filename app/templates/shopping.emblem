@@ -1,7 +1,13 @@
 .cd-main-content.navigation-content
 	.cd-scrolling-bg
 		#shopping.row
-			partial 'partials/shopping-carousel'
-			link-to 'Browse Products' 'spree.products' class="button right"
 
-			partial 'partials/shop-modal'
+			=filterComputed.name
+
+			partial 'partials/shopping-carousel'
+			.large-10.columns
+				popular-products products=filterComputed
+			.large-2.columns
+				link-to 'Browse All Products' 'spree.products' class="button browse-btn"
+
+			/ partial 'partials/shop-modal'

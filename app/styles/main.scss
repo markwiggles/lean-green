@@ -1,5 +1,4 @@
 @import "bower_components/font-awesome/scss/font-awesome";
-
 body,
 html {
   font-family: "Roboto", sans-serif;
@@ -22,8 +21,8 @@ HEADER
 --------------------------------------------------------------------------------
 */
 .fixed {
-  background-color: black;
-  height: 120px;
+  background-color: $header-color;
+  height: 150px;
 }
 .title-area {
   z-index: 100;
@@ -38,12 +37,42 @@ HEADER
     }
   }
 }
+.name {
+  img {
+    display: block;
+  }
+  #social-media {
+    display: block;
+    margin-top: -1rem;
+    z-index: 300;
+    text-align: left;
+    overflow: visible;
+    span {
+      display: inline-block;
+      position: relative;
+      height: 2.5rem;
+      width: 2.5rem;
+      margin-right: 1rem;
+      .fa {
+        position: absolute;
+        color: $lg-green;
+        padding: 0.5rem 1rem 1rem;
+        font-size: 2rem;
+      }
+      .fa:hover {
+        font-size: 2.2rem;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+    }
+  }
+}
 .top-bar {
-  height: 120px;
+  height: 150px;
   text-align: left !important;
   .top-bar-section {
     height: 120px;
-    background-color: black;
+    background-color: inherit;
     #user-menu {
       float: right;
       color: #fff;
@@ -61,9 +90,9 @@ HEADER
     #nav-menu {
       float: right;
       clear: right;
-      margin-top: 30px;
+      margin-top: 3.5rem;
       li {
-        letter-spacing: 0.2em;
+        letter-spacing: 0.2rem;
       }
     }
   }
@@ -81,38 +110,39 @@ HEADER
 
 // Change things up when the top-bar is expanded
 .top-bar.expanded {
-  background-color: black;
+  background-color: inherit;
   text-align: left;
   #user-menu,
   #nav-menu {
     text-align: center;
   }
 }
+
 /*
---------------------------------------------------------------------------------
-SHOPPING
---------------------------------------------------------------------------------
-*/
-.shop-content, #shop-modal {
-  h1,h2,h3 {
+-------------------------------------------------------------------------------- SHOPPING -------------------------------------------------------------------------------- */
+.shop-content,
+#shop-modal {
+  h1,
+  h2,
+  h3 {
     color: $lg-green-dark;
   }
-#shopping {
-  img {
-    max-height: 400px;
+  #shopping {
+    img {
+      max-height: 400px;
+    }
   }
-}
-#myModal {
-  text-align: center;
-}
+  #myModal {
+    text-align: center;
+  }
 
   // margin-top: 150px;
 }
 .product-index {
-  background: -webkit-linear-gradient($lg-green,$lg-green-dark );
-  background: -o-linear-gradient($lg-green, $lg-green-dark );
-  background: -moz-linear-gradient($lg-green, $lg-green-dark );
-  background: linear-gradient($lg-green, $lg-green-dark );
+  background: -webkit-linear-gradient($lg-green-light,$lg-green-darker );
+  background: -o-linear-gradient($lg-green-light, $lg-green-darker );
+  background: -moz-linear-gradient($lg-green-light, $lg-green-darker );
+  background: linear-gradient($lg-green-light, $lg-green-darker );
   border: 1px solid lightgrey;
   border-radius: 10px;
   padding: 1rem;
@@ -125,18 +155,22 @@ SHOPPING
     margin-bottom: 1rem;
   }
   .product-sell {
-    background: -webkit-linear-gradient($lg-green,$lg-green-dark );
-    background: -o-linear-gradient($lg-green, $lg-green-dark );
-    background: -moz-linear-gradient($lg-green, $lg-green-dark );
-    background: linear-gradient($lg-green, $lg-green-dark );
+    background: -webkit-linear-gradient($lg-green-light,$lg-green-darker );
+    background: -o-linear-gradient($lg-green-light, $lg-green-darker );
+    background: -moz-linear-gradient($lg-green-light, $lg-green-darker );
+    background: linear-gradient($lg-green-light, $lg-green-darker );
     border-radius: 10px;
     padding: 1rem;
+
     // margin: 10px;
     // width: 12rem;
     h6 {
       color: #fff;
     }
   }
+}
+.product-index:hover .product-sell{
+  background: $lg-green-dark;
 }
 .truncate-multiline--truncation-target {
   width: 30rem;
@@ -540,4 +574,25 @@ THE IMAGE BACKGROUNDS
 }
 .uppercase {
   text-transform: uppercase;
+}
+
+.scale-up img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all 1s ease; /* Firefox */
+  	-o-transition: all 1s ease; /* IE 9 */
+  	-ms-transition: all 1s ease; /* Opera */
+  	transition: all 1s ease;
+}
+
+.scale-up:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+.zoom-in img {
+    cursor: -moz-zoom-in;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
 }

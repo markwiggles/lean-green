@@ -2,6 +2,7 @@
   <ul class="title-area">
     <li class="name">
       <img src="assets/images/lean-green-logo-simple.png">
+      {{partial 'partials/social-media'}}
     </li>
   </ul>
   <ul>
@@ -12,18 +13,15 @@
   </ul>
 
   <section class="top-bar-section">
-
     <!-- LOGIN SECTION -->
     {{partial 'partials/user-menu'}}
-
-
     <!-- Right Nav Section -->
     <ul id="nav-menu">
       <li>{{link-to 'Home' 'index'}}</li>
       <li>{{link-to 'About L&G' 'about'}}</li>
       <li>{{link-to 'Get Training' 'training'}}</li>
       <li>{{link-to 'Get Vegucated' 'vegucated'}}</li>
-      <li>{{link-to 'Raving Reviews' 'reviews'}}</li>
+      {{!-- <li>{{link-to 'Raving Reviews' 'reviews'}}</li> --}}
       <li>{{link-to 'Go Shopping' 'shopping'}}</li>
     </ul>
 

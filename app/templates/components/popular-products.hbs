@@ -1,0 +1,16 @@
+<div class="row popular-products">
+  <fieldset>
+    <legend class="lg-green-dark">Popular Products</legend>
+    {{#each products as |product|}}
+      {{#link-to 'spree.products.show' product}}
+        <div class="small-12 medium-6 large-2 columns text-center product-index">
+          {{spree-pi images=product.images class="p-images"}}
+          <div class="product-sell">
+            <h6 class="product-index-name">{{{product.name}}}</h6>
+            <h6 class="product-index-price">{{product.displayPrice}}</h6>
+          </div>
+        </div>
+      {{/link-to}}
+    {{/each}}
+  </fieldset>
+</div>

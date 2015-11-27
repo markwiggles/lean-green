@@ -1,0 +1,7 @@
+#social-media
+	span
+	 	=fa-icon icon="facebook-official" class="enlarge"
+	span
+		=fa-icon icon="youtube" class="enlarge"
+	span
+		=fa-icon icon="instagram" class="enlarge"

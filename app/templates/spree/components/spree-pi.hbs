@@ -1,3 +1,5 @@
-{{#each image in images}}
-  <img {{bind-attr src=image.largeUrl}}>
-{{/each}}
+<div class="p-images">
+  {{#each image in images}}
+    <img {{bind-attr src=image.largeUrl}}>
+  {{/each}}
+</div>

@@ -1,0 +1,54 @@
+.popular-products {
+  .product-index {
+    display: inline-block;
+    background: -webkit-linear-gradient($lg-green,$lg-green-dark );
+    background: -o-linear-gradient($lg-green, $lg-green-dark );
+    background: -moz-linear-gradient($lg-green, $lg-green-dark );
+    background: linear-gradient($lg-green, $lg-green-dark );
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 0;
+    margin: 10px;
+    width: 15rem;
+    height: 6rem;
+    .p-images {
+      float: left;
+      width: auto;
+      padding: 0.3rem;
+      img {
+        display: inline-block;
+        max-height: 5rem;
+        width: auto;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .product-sell {
+      float: left;
+      border-radius: 10px;
+      margin-top: 0.4rem;
+      padding: 0;
+      width: 8rem;
+      text-align: center;
+
+      // margin: 10px;
+      // width: 12rem;
+      h6 {
+        color: #fff;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+.browse-btn {
+  margin-top: 3rem;
+}
+fieldset {
+	background-color: lighten(gray, 45%);
+	border-radius: 10px;
+  legend {
+    font-size: 2rem;
+  }
+}
+.lg-green-dark {
+  color: $lg-green-dark;
+}

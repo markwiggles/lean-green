@@ -14,29 +14,33 @@ export default Ember.View.extend({
 			}
 		});
 
-// 		$('#myModal').data('reveal-init', {
-//     animation: 'fadeAndPop',
-//     animation_speed: 250,
-//     close_on_background_click: false,
-//     close_on_esc: false,
-//     dismiss_modal_class: 'close-reveal-modal',
-//     bg_class: 'reveal-modal-bg',
-//     bg : $('.reveal-modal-bg'),
-//     css : {
-//         open : {
-//             'opacity': 0,
-//             'visibility': 'visible',
-//             'display' : 'block'
-//         },
-//         close : {
-//             'opacity': 1,
-//             'visibility': 'hidden',
-//             'display': 'none'
-//         }
-//     }
-// });
+		$('.single-item').slick({
+			arrows: true
+		});
 
-$('#shop-modal').foundation('reveal', 'open');
+		// 		$('#myModal').data('reveal-init', {
+		//     animation: 'fadeAndPop',
+		//     animation_speed: 250,
+		//     close_on_background_click: false,
+		//     close_on_esc: false,
+		//     dismiss_modal_class: 'close-reveal-modal',
+		//     bg_class: 'reveal-modal-bg',
+		//     bg : $('.reveal-modal-bg'),
+		//     css : {
+		//         open : {
+		//             'opacity': 0,
+		//             'visibility': 'visible',
+		//             'display' : 'block'
+		//         },
+		//         close : {
+		//             'opacity': 1,
+		//             'visibility': 'hidden',
+		//             'display': 'none'
+		//         }
+		//     }
+		// });
+
+		$('#shop-modal').foundation('reveal', 'open');
 
 	}
 

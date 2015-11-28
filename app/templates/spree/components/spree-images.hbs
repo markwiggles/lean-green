@@ -1,11 +1,14 @@
 <div class="row">
   <div class="small-12 columns">
-    <div class="magnify">
-      <div class="large" style="background: url({{selectedImage.largeUrl}}) no-repeat;"></div>
-      <img {{bind-attr src=selectedImage.largeUrl}} class="small">
+    <div class="product-image-outer">
+      <small class="lg-green-dark"><i>Select image below and hover to enlarge</i></small>
+      <div class="product-image">
+        <img {{bind-attr src=selectedImage.largeUrl}} class="small" width=300>
+      </div>
     </div>
+    <br>
   </div>
-  <hr>
+
   <div class="small-12 columns">
     <div class="row">
       {{#each image in images}}

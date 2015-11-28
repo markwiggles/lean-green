@@ -34,7 +34,12 @@ $topbar-link-weight: normal;
 $topbar-link-font-size: rem-calc(13);
 $topbar-link-hover-lightness: -10%; // Darken by 10%
 
-
+.uppercase {
+  text-transform: uppercase;
+}
+.lg-green-dark {
+	color: $lg-green-dark;
+}
 
 // Height and margin
 // $topbar-height: 100px !default;

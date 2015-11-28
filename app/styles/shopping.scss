@@ -1,0 +1,100 @@
+
+.shop-content,
+#shop-modal {
+  h1,
+  h2,
+  h3 {
+    color: $lg-green-dark;
+  }
+  #shopping {
+    img {
+      max-height: 400px;
+    }
+  }
+  #myModal {
+    text-align: center;
+  }
+
+  // margin-top: 150px;
+}
+.product-index {
+  background: -webkit-linear-gradient($lg-green-light,$lg-green-darker );
+  background: -o-linear-gradient($lg-green-light, $lg-green-darker );
+  background: -moz-linear-gradient($lg-green-light, $lg-green-darker );
+  background: linear-gradient($lg-green-light, $lg-green-darker );
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 20px;
+  width: 13rem;
+  height: 20rem;
+  img {
+    max-height: 10rem;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+  .product-sell {
+    background: -webkit-linear-gradient($lg-green-light,$lg-green-darker );
+    background: -o-linear-gradient($lg-green-light, $lg-green-darker );
+    background: -moz-linear-gradient($lg-green-light, $lg-green-darker );
+    background: linear-gradient($lg-green-light, $lg-green-darker );
+    border-radius: 10px;
+    padding: 1rem;
+
+    // margin: 10px;
+    // width: 12rem;
+    h6 {
+      color: #fff;
+    }
+  }
+}
+.product-index:hover .product-sell{
+  background: $lg-green-dark;
+}
+.truncate-multiline--truncation-target {
+  width: 30rem;
+}
+
+//accordion
+.accordion-navigation .content {
+  background-color: #FFF;
+}
+.accordion .content p {
+  font-size: 14px;
+}
+@charset "UTF-8";
+.accordion-navigation > a:after {
+  content: "↡";
+  color: $lg-green;
+  padding-left: 5px;
+  float: right;
+  font-size: 20px;
+}
+.accordion-navigation.active > a:after {
+  content: "↟";
+}
+#checkbox-hide {
+  display: none;
+}
+#plantastic {
+  .logo-img {
+    height: 4rem;
+    width: auto;
+    padding: 0;
+    vertical-align: bottom;
+    margin-right: 3rem;
+  }
+  .logo-border {
+    background-color: lighten(lightgrey,10%);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 2em;
+  }
+}
+#busygreens,
+#plantastic,
+#vegomega {
+  li {
+    font-size: 1.2rem;
+  }
+}
